@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Dzinkss</a>
+        <ul>
+            
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Moj Portfolio</h2>
+        <a href="#sec" id="btn">SAZNAJ</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Strahinja Džinovic - Dzinkss</h2>
+        <div class="holdingcontainer2">
+            <div class="internalcontainerL2"><img src="Ja.jpg" class="images" width="100%" height="100%"></div>
+            <div class="internalcontainerR2"> <br>  <h1>O meni</h1><p>Pozdrav svima! Moje ime je Strahinja Džinović, bavim se WEB-dzajnomm već 4 godine i iza sebi imam veliki broj projekata. <br>
+                Moj cilj je da jednog dana otvorim svoju programersku firmu za WEB programiranje. <br><br>
+                Moje mane: <br><br>
+                - Volim kasno da legnem. <br>
+                - Volim kasno da se budim. <br>
+                - Uglavnom nemam ni jedan strah <br><br>
+                Moje vrline: <br><br>
+                - Brz i efikasan <br>
+                - Nisam lenj <br>
+                - Manipulator</p><br>
+                Instagram: @mr.dzinkss <br>
+                Email: sdzinovic@smart.edu.rs
+            
+            
+            </div>
+        </div>
+        <br>
+            <h2>Moja omiljena hrana:</h2>
+            <br>
+            <div class="holdingcontainer">
+                <div class="internalcontainerL"><h1>Burger</h1><img src="burger.jpg" class="images" width="100%" height="100%"></div>
+                <div class="internalcontainerN"><h1>Pizza</h1><img src="pizza.jpg" class="images" width="100%" height="100%"></div>
+                <div class="internalcontainerR"><h1>Piletina</h1><img src="pile.jpg" class="images" width="100%" height="100%"></div>
+            </div>
+    </div>
+
+    <!--SKRIPTA-->
+
+    <script>
+        let stars = document.getElementById('stars');
+        let text = document.getElementById('text');
+        let header =document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            text.style.marginRight= value * 4 + 'px';
+            text.style.marginTop= value * 1.5 + 'px';
+            header.style.top= value * 0.5 + 'px';
+        })
+    </script>
+
+</body>
+</html>
